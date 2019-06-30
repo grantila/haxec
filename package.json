@@ -17,10 +17,9 @@
     "dist"
   ],
   "scripts": {
-    "build:compile": "node_modules/.bin/rimraf dist && node_modules/.bin/tsc",
-    "build:copy-js": "find test lib -name '*.js' | cpio -pdm dist/",
-    "build": "yarn build:compile",
+    "build": "node_modules/.bin/rimraf dist && node_modules/.bin/tsc",
     "test": "node node_modules/.bin/jest",
+    "buildtest": "yarn build && yarn test",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release",
     "cz": "git-cz"
