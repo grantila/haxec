@@ -12,10 +12,10 @@ function die( msg: string ): never
 }
 
 if ( moduleName == null )
-	die( "Invalid usage of <wrapcmd>, no wrap module provided!" );
+	die( "Invalid usage of <haxec>, no wrap module provided!" );
 if ( !existsSync( < string >moduleName ) )
 	die(
-		`Invalid usage of <wrapcmd>, no wrap module ${moduleName} not found!`
+		`Invalid usage of <haxec>, no wrap module ${moduleName} not found!`
 	);
 
 const { before, after } = require( < string >moduleName );

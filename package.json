@@ -1,13 +1,13 @@
 {
-  "name": "wrapcmd",
-  "version": "0.0.0-development",
+  "name": "haxec",
+  "version": "1.0.0",
   "description": "Wrap a Node.js spawn() or exec() with before/after handlers",
   "author": "Gustaf Räntilä",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/grantila/wrapcmd/issues"
+    "url": "https://github.com/grantila/haxec/issues"
   },
-  "homepage": "https://github.com/grantila/wrapcmd#readme",
+  "homepage": "https://github.com/grantila/haxec#readme",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "engines": {
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/grantila/wrapcmd"
+    "url": "https://github.com/grantila/haxec"
   },
   "keywords": [
     "wrap",

@@ -3,7 +3,7 @@ import * as os from "os"
 import * as fs from "fs"
 import { execFileSync } from "child_process"
 
-describe( "wrapcmd", ( ) =>
+describe( "haxec", ( ) =>
 {
 	it( "should handle successful commands", async ( ) =>
 	{

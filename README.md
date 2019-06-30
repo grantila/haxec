@@ -5,7 +5,7 @@
 [![Language grade: JavaScript][lgtm-image]][lgtm-url]
 
 
-# wrapcmd
+# haxec
 
 Run a (JavaScript) program with *before* and *after* handlers inside the child process. The command can be either a `.js` file or a `node file.js [...]` command line, or a Node shebang script.
 
@@ -18,10 +18,10 @@ The invoked program will take over standard I/O and become foreground. When the 
 
 ## Interface
 
-The interface for `wrapcmd` is a module exporting a function `run`:
+The interface for `haxec` is a module exporting a function `run`:
 
 ```ts
-const { run } = require( 'wrapcmd/register' );
+const { run } = require( 'haxec/register' );
 
 // run is defined as:
 function run(
@@ -38,7 +38,7 @@ interface Options
 }
 ```
 
-The `wrapModule` is *your* module (it will make sense to provide an absolut path to it) which `wrapcmd` will `require()`. This module is supposed to export a `before` function and/or a `after` function. The module will be injected into the command that is being run, so these functions will be called in that process.
+The `wrapModule` is *your* module (it will make sense to provide an absolut path to it) which `haxec` will `require()`. This module is supposed to export a `before` function and/or a `after` function. The module will be injected into the command that is being run, so these functions will be called in that process.
 
 `run` returns nothing. At this time, the program shouldn't do much else, as the child will take over terminal I/O and exit the parent when the child exits.
 
@@ -51,7 +51,7 @@ To perform any final/cleanup work right before the child has exited, provide a `
 
 ```ts
 const path = require( "path" );
-const { run } = require( 'wrapcmd/register' );
+const { run } = require( 'haxec/register' );
 
 const wrapModule = path.join( __dirname, "child.js" );
 
@@ -67,7 +67,7 @@ run( wrapModule, [ "./script-name.sh", "arg1" ] );
 
 ```ts
 // main.js
-const { run } = require( 'wrapcmd/register' );
+const { run } = require( 'haxec/register' );
 
 run(
   path.join( __dirname, "child.js" ),
@@ -98,12 +98,12 @@ module.exports = {
 ```
 
 
-[npm-image]: https://img.shields.io/npm/v/wrapcmd.svg
-[npm-url]: https://npmjs.org/package/wrapcmd
-[downloads-image]: https://img.shields.io/npm/dm/wrapcmd.svg
-[travis-image]: https://img.shields.io/travis/grantila/wrapcmd/master.svg
-[travis-url]: https://travis-ci.org/grantila/wrapcmd
-[greenkeeper-image]: https://badges.greenkeeper.io/grantila/wrapcmd.svg
+[npm-image]: https://img.shields.io/npm/v/haxec.svg
+[npm-url]: https://npmjs.org/package/haxec
+[downloads-image]: https://img.shields.io/npm/dm/haxec.svg
+[travis-image]: https://img.shields.io/travis/grantila/haxec/master.svg
+[travis-url]: https://travis-ci.org/grantila/haxec
+[greenkeeper-image]: https://badges.greenkeeper.io/grantila/haxec.svg
 [greenkeeper-url]: https://greenkeeper.io/
-[lgtm-image]: https://img.shields.io/lgtm/grade/javascript/g/grantila/wrapcmd.svg?logo=lgtm&logoWidth=18
-[lgtm-url]: https://lgtm.com/projects/g/grantila/wrapcmd/context:javascript
+[lgtm-image]: https://img.shields.io/lgtm/grade/javascript/g/grantila/haxec.svg?logo=lgtm&logoWidth=18
+[lgtm-url]: https://lgtm.com/projects/g/grantila/haxec/context:javascript
