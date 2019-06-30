@@ -21,7 +21,7 @@ The invoked program will take over standard I/O and become foreground. When the 
 The interface for `haxec` is a module exporting a function `run`:
 
 ```ts
-const { run } = require( 'haxec/register' );
+const { run } = require( 'haxec' );
 
 // run is defined as:
 function run(
@@ -51,7 +51,7 @@ To perform any final/cleanup work right before the child has exited, provide a `
 
 ```ts
 const path = require( "path" );
-const { run } = require( 'haxec/register' );
+const { run } = require( 'haxec' );
 
 const wrapModule = path.join( __dirname, "child.js" );
 
@@ -67,7 +67,7 @@ run( wrapModule, [ "./script-name.sh", "arg1" ] );
 
 ```ts
 // main.js
-const { run } = require( 'haxec/register' );
+const { run } = require( 'haxec' );
 
 run(
   path.join( __dirname, "child.js" ),
