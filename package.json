@@ -40,7 +40,7 @@
     "@types/node": "^12",
     "already": "^1.8.0",
     "commitizen": "^3",
-    "cz-conventional-changelog": "^2",
+    "cz-conventional-changelog": "^3.0.0",
     "jest": "^24",
     "rimraf": "^2.6.3",
     "semantic-release": "^15.13.18",
