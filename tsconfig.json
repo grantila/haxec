@@ -6,8 +6,6 @@
 			"node",
 			"jest"
 		],
-		"outDir": "dist",
-		"sourceMap": true,
 		"module": "CommonJS",
 		"target": "esnext",
 		"noUnusedParameters": true,
@@ -15,6 +13,7 @@
 		"strict": true
 	},
 	"include": [
+		"index.ts",
 		"externals.d.ts",
 		"lib",
 		"test"
