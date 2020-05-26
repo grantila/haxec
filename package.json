@@ -40,7 +40,7 @@
   "devDependencies": {
     "@types/jest": "^24.9.1",
     "@types/node": "^13.5.0",
-    "already": "^1.10.0",
+    "already": "^1.12.1",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
     "jest": "^25.1.0",
