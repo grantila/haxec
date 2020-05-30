@@ -45,7 +45,7 @@
     "cz-conventional-changelog": "^3.0.2",
     "jest": "^25.1.0",
     "rimraf": "^3.0.0",
-    "ts-jest": "^25.0.0",
+    "ts-jest": "^26.1.0",
     "typescript": "^3.7.5"
   },
   "config": {
