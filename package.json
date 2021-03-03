@@ -1,6 +1,6 @@
 {
   "name": "haxec",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Wrap a Node.js spawn() or exec() with before/after handlers",
   "author": "Gustaf Räntilä",
   "license": "MIT",
@@ -17,13 +17,11 @@
     "dist"
   ],
   "scripts": {
-    "build:dist": "node_modules/.bin/rimraf dist && node_modules/.bin/tsc -p tsconfig.prod.json",
-    "build:test": "node_modules/.bin/rimraf dist-test && node_modules/.bin/tsc -p tsconfig.test.json",
+    "build:dist": "rimraf dist && tsc -p tsconfig.prod.json",
+    "build:test": "rimraf dist-test && tsc -p tsconfig.test.json",
     "build": "yarn build:dist && yarn build:test",
-    "test": "node node_modules/.bin/jest",
+    "test": "jest",
     "buildtest": "yarn build && yarn test",
-    "travis-deploy-once": "travis-deploy-once",
-    "semantic-release": "semantic-release",
     "cz": "git-cz"
   },
   "repository": {
@@ -41,7 +39,6 @@
     "@types/jest": "^24.9.1",
     "@types/node": "^13.5.0",
     "already": "^1.10.0",
-    "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
     "jest": "^25.1.0",
     "rimraf": "^3.0.0",
