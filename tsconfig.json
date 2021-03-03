@@ -1,13 +1,13 @@
 {
 	"compilerOptions": {
 		"declaration": true,
-		"lib": [ "ES2017" ],
+		"lib": [ "ES2018" ],
 		"types": [
 			"node",
 			"jest"
 		],
 		"module": "CommonJS",
-		"target": "ES2017",
+		"target": "ES2018",
 		"noUnusedParameters": true,
 		"noUnusedLocals": true,
 		"strict": true
