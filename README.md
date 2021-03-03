@@ -1,6 +1,6 @@
 [![npm version][npm-image]][npm-url]
 [![downloads][downloads-image]][npm-url]
-[![build status][travis-image]][travis-url]
+[![build status][build-image]][build-url]
 [![greenkeeper badge][greenkeeper-image]][greenkeeper-url]
 [![Language grade: JavaScript][lgtm-image]][lgtm-url]
 
@@ -101,8 +101,8 @@ module.exports = {
 [npm-image]: https://img.shields.io/npm/v/haxec.svg
 [npm-url]: https://npmjs.org/package/haxec
 [downloads-image]: https://img.shields.io/npm/dm/haxec.svg
-[travis-image]: https://img.shields.io/travis/grantila/haxec/master.svg
-[travis-url]: https://travis-ci.org/grantila/haxec
+[build-image]: https://img.shields.io/github/workflow/status/grantila/haxec/Master.svg
+[build-url]: https://github.com/grantila/haxec/actions?query=workflow%3AMaster
 [greenkeeper-image]: https://badges.greenkeeper.io/grantila/haxec.svg
 [greenkeeper-url]: https://greenkeeper.io/
 [lgtm-image]: https://img.shields.io/lgtm/grade/javascript/g/grantila/haxec.svg?logo=lgtm&logoWidth=18
